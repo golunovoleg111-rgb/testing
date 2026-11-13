@@ -53,7 +53,7 @@
   function navigate(hash) {
     if (location.hash === "#" + hash) route();
     else location.hash = hash;
-    window.scrollTo({ top: 0, behavior: "instant" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   function updateHeader() {
@@ -546,7 +546,7 @@
 
   window.addEventListener("hashchange", () => {
     route();
-    if (location.hash !== "#catalog") window.scrollTo({ top: 0, behavior: "instant" });
+    if (location.hash !== "#catalog") window.scrollTo({ top: 0, behavior: "auto" });
   });
   route();
 })();
