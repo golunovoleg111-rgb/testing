@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Кто ты в мультвселенной, среди мемов или в понедельник утром? 10 необычных тестов с результатами и историей.">
+  <title>КТО ТЫ? — лаборатория тестов</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23675bff'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44'%3E%3F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="tests.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="КТО ТЫ? — на главную">
+        <span class="brand-mark" aria-hidden="true">?</span>
+        <span class="brand-text">КТО <em>ТЫ?</em><small>TEST LAB</small></span>
+      </a>
+      <nav class="header-nav" aria-label="Главное меню">
+        <a href="#home" id="nav-home">Все тесты</a>
+        <a href="#history" id="nav-history">История <span class="nav-count" id="history-count">0</span></a>
+      </nav>
+      <button class="top-surprise" type="button" data-action="random"><span aria-hidden="true">✦</span> Мне повезёт</button>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="site-footer">
+      <div class="footer-brand"><span>?</span> КТО ТЫ? <span class="footer-spark">✳</span></div>
+      <p>Серьёзные вопросы. Несерьёзно хорошие ответы.</p>
+      <small>Сделано для веселья. Психологические тесты не являются диагностикой.</small>
+    </footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
